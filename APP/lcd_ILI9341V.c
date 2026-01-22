@@ -1,6 +1,6 @@
 #include "lcd_ILI9341V.h"
 
-static void ILI9341_Select() {
+ void ILI9341_Select() {
     HAL_GPIO_WritePin(GPIOB, LCD_CS_Pin, GPIO_PIN_RESET);
 }
 
@@ -35,7 +35,7 @@ static void ILI9341_WriteData(uint8_t* buff, size_t buff_size) {
 }
 
 
-static void ILI9341_SetAddressWindow(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1) {
+ void ILI9341_SetAddressWindow(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1) {
     // column address set
     ILI9341_WriteCommand(0x2A); // CASET
     {

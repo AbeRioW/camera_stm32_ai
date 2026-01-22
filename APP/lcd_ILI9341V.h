@@ -43,6 +43,9 @@ void ILI9341_FillRectangle(uint16_t x, uint16_t y, uint16_t w, uint16_t h, uint1
 void ILI9341_FillScreen(uint16_t color);
 void ILI9341_InvertColors(bool invert);
 
+
+void ILI9341_SetAddressWindow(uint16_t x0, uint16_t y0, uint16_t x1, uint16_t y1);
+ void ILI9341_Select() ;
 #if 0
 
 //LCD��Ҫ������

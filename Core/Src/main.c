@@ -24,6 +24,8 @@
 /* Private includes ----------------------------------------------------------*/
 /* USER CODE BEGIN Includes */
 #include "lcd_ILI9341V.h"
+#include "lv_port_disp_template.h"
+#include "lv_demo_stress.h"
 /* USER CODE END Includes */
 
 /* Private typedef -----------------------------------------------------------*/
@@ -82,21 +84,21 @@ int main(void)
   SystemClock_Config();
 
   /* USER CODE BEGIN SysInit */
-
+  
   /* USER CODE END SysInit */
 
   /* Initialize all configured peripherals */
   MX_GPIO_Init();
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
-	ILI9341_Unselect();
-  ILI9341_Init();
-	ILI9341_InvertColors(true);
-	ILI9341_FillScreen(ILI9341_RED);
-//	  for(int x = 0; x < ILI9341_WIDTH; x++) {
-//        ILI9341_DrawPixel(x, 0, ILI9341_RED);
-//        ILI9341_DrawPixel(x, ILI9341_HEIGHT-1, ILI9341_RED);
-//    }
+	
+		lv_init();
+	lv_port_disp_init();
+	
+	lv_obj_t * switch_obj = lv_switch_create(lv_scr_act()); 
+  //lv_obj_set_pos(switch_obj,10,10); 
+lv_obj_set_size(switch_obj,100,50);
+ lv_obj_align(switch_obj,LV_ALIGN_CENTER,0,0);
   /* USER CODE END 2 */
 
   /* Infinite loop */
@@ -106,6 +108,7 @@ int main(void)
     /* USER CODE END WHILE */
 
     /* USER CODE BEGIN 3 */
+		lv_timer_handler();
   }
   /* USER CODE END 3 */
 }
