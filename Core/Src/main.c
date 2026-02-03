@@ -25,6 +25,7 @@
 /* USER CODE BEGIN Includes */
 #include "lcd_ILI9341V.h"
 #include "lv_port_disp_template.h"
+#include "lv_port_indev_template.h"
 #include "lv_demo_stress.h"
 /* USER CODE END Includes */
 
@@ -92,13 +93,15 @@ int main(void)
   MX_SPI1_Init();
   /* USER CODE BEGIN 2 */
 	
-		lv_init();
+	lv_init();
 	lv_port_disp_init();
+	
+	lv_port_indev_init();
 	
 	lv_obj_t * switch_obj = lv_switch_create(lv_scr_act()); 
   //lv_obj_set_pos(switch_obj,10,10); 
-lv_obj_set_size(switch_obj,100,50);
- lv_obj_align(switch_obj,LV_ALIGN_CENTER,0,0);
+  lv_obj_set_size(switch_obj,100,50);
+  lv_obj_align(switch_obj,LV_ALIGN_CENTER,0,0);
   /* USER CODE END 2 */
 
   /* Infinite loop */

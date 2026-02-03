@@ -63,6 +63,14 @@ void Error_Handler(void);
 #define LCD_RS_GPIO_Port GPIOB
 #define LCD_CS_Pin GPIO_PIN_15
 #define LCD_CS_GPIO_Port GPIOB
+#define I2C_INT_Pin GPIO_PIN_3
+#define I2C_INT_GPIO_Port GPIOB
+#define I2C_RST_Pin GPIO_PIN_5
+#define I2C_RST_GPIO_Port GPIOB
+#define I2C_SCL_Pin GPIO_PIN_6
+#define I2C_SCL_GPIO_Port GPIOB
+#define I2C_SDA_Pin GPIO_PIN_7
+#define I2C_SDA_GPIO_Port GPIOB
 
 /* USER CODE BEGIN Private defines */
 

@@ -519,6 +519,11 @@
               <FileType>5</FileType>
               <FilePath>..\APP\lcd_ILI9341V.h</FilePath>
             </File>
+            <File>
+              <FileName>ft6336_touch.c</FileName>
+              <FileType>1</FileType>
+              <FilePath>..\APP\ft6336_touch.c</FilePath>
+            </File>
           </Files>
         </Group>
         <Group>

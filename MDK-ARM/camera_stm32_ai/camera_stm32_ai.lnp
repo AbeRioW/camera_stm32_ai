@@ -21,6 +21,7 @@
 "camera_stm32_ai\stm32f4xx_hal_exti.o"
 "camera_stm32_ai\system_stm32f4xx.o"
 "camera_stm32_ai\lcd_ili9341v.o"
+"camera_stm32_ai\ft6336_touch.o"
 "camera_stm32_ai\lv_port_disp_template.o"
 "camera_stm32_ai\lv_port_indev_template.o"
 "camera_stm32_ai\lv_disp.o"

@@ -154,6 +154,7 @@ camera_stm32_ai\main.o: ../LVGL/GUI/src/extra/libs/sjpg/lv_sjpg.h
 camera_stm32_ai\main.o: ../LVGL/GUI/src/extra/libs/freetype/lv_freetype.h
 camera_stm32_ai\main.o: ../LVGL/GUI/src/extra/libs/rlottie/lv_rlottie.h
 camera_stm32_ai\main.o: ../LVGL/GUI/src/extra/libs/ffmpeg/lv_ffmpeg.h
+camera_stm32_ai\main.o: ../LVGL/GUI/examples/porting/lv_port_indev_template.h
 camera_stm32_ai\main.o: ../LVGL/GUI/demos/stress/lv_demo_stress.h
 camera_stm32_ai\main.o: ../LVGL/GUI/demos/stress/../lv_demos.h
 camera_stm32_ai\main.o: ../LVGL/GUI/demos/stress/../stress/lv_demo_stress.h
