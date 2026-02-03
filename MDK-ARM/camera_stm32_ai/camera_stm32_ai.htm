@@ -3,7 +3,7 @@
 <title>Static Call Graph - [camera_stm32_ai\camera_stm32_ai.axf]</title></head>
 <body><HR>
 <H1>Static Call Graph for image camera_stm32_ai\camera_stm32_ai.axf</H1><HR>
-<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Mon Feb 02 17:47:44 2026
+<BR><P>#&#060CALLGRAPH&#062# ARM Linker, 5060750: Last Updated: Tue Feb 03 15:25:01 2026
 <BR><P>
 <H3>Maximum Stack Usage =       1024 bytes + Unknown(Functions without stacksize, Cycles, Untraceable Function Pointers)</H3><H3>
 Call chain for Maximum Stack Depth:</H3>
@@ -875,7 +875,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[11f]"></a>FT6336_GetTouchPoint</STRONG> (Thumb, 74 bytes, Stack size 24 bytes, ft6336_touch.o(i.FT6336_GetTouchPoint))
-<BR><BR>[Stack]<UL><LI>Max Depth = 128<LI>Call Chain = FT6336_GetTouchPoint &rArr; FT6336_ReadReg &rArr; I2C_SendByte &rArr; I2C_ReceiveAck &rArr; I2C_SDA_Input &rArr; HAL_GPIO_Init
+<BR><BR>[Stack]<UL><LI>Max Depth = 136<LI>Call Chain = FT6336_GetTouchPoint &rArr; FT6336_ReadReg &rArr; I2C_SendByte &rArr; I2C_ReceiveAck &rArr; I2C_SDA_Input &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FT6336_ReadReg
 <LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FT6336_GetTouchStatus
@@ -884,7 +884,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[120]"></a>FT6336_GetTouchStatus</STRONG> (Thumb, 6 bytes, Stack size 0 bytes, ft6336_touch.o(i.FT6336_GetTouchStatus))
-<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = FT6336_GetTouchStatus &rArr; FT6336_ReadReg &rArr; I2C_SendByte &rArr; I2C_ReceiveAck &rArr; I2C_SDA_Input &rArr; HAL_GPIO_Init
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = FT6336_GetTouchStatus &rArr; FT6336_ReadReg &rArr; I2C_SendByte &rArr; I2C_ReceiveAck &rArr; I2C_SDA_Input &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FT6336_ReadReg
 </UL>
@@ -893,7 +893,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[122]"></a>FT6336_Init</STRONG> (Thumb, 46 bytes, Stack size 8 bytes, ft6336_touch.o(i.FT6336_Init))
-<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = FT6336_Init &rArr; FT6336_ReadReg &rArr; I2C_SendByte &rArr; I2C_ReceiveAck &rArr; I2C_SDA_Input &rArr; HAL_GPIO_Init
+<BR><BR>[Stack]<UL><LI>Max Depth = 120<LI>Call Chain = FT6336_Init &rArr; FT6336_ReadReg &rArr; I2C_SendByte &rArr; I2C_ReceiveAck &rArr; I2C_SDA_Input &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[124]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_Delay
@@ -903,7 +903,7 @@ Global Symbols
 </UL>
 
 <P><STRONG><a name="[121]"></a>FT6336_ReadReg</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, ft6336_touch.o(i.FT6336_ReadReg))
-<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = FT6336_ReadReg &rArr; I2C_SendByte &rArr; I2C_ReceiveAck &rArr; I2C_SDA_Input &rArr; HAL_GPIO_Init
+<BR><BR>[Stack]<UL><LI>Max Depth = 112<LI>Call Chain = FT6336_ReadReg &rArr; I2C_SendByte &rArr; I2C_ReceiveAck &rArr; I2C_SDA_Input &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[129]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Stop
 <LI><a href="#[125]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_Start
@@ -1084,7 +1084,7 @@ Global Symbols
 <LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_ReceiveAck
 </UL>
 
-<P><STRONG><a name="[13c]"></a>I2C_ReceiveAck</STRONG> (Thumb, 50 bytes, Stack size 16 bytes, ft6336_touch.o(i.I2C_ReceiveAck))
+<P><STRONG><a name="[13c]"></a>I2C_ReceiveAck</STRONG> (Thumb, 52 bytes, Stack size 16 bytes, ft6336_touch.o(i.I2C_ReceiveAck))
 <BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = I2C_ReceiveAck &rArr; I2C_SDA_Input &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
@@ -1095,8 +1095,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[126]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_SendByte
 </UL>
 
-<P><STRONG><a name="[127]"></a>I2C_ReceiveByte</STRONG> (Thumb, 72 bytes, Stack size 24 bytes, ft6336_touch.o(i.I2C_ReceiveByte))
-<BR><BR>[Stack]<UL><LI>Max Depth = 88<LI>Call Chain = I2C_ReceiveByte &rArr; I2C_SDA_Input &rArr; HAL_GPIO_Init
+<P><STRONG><a name="[127]"></a>I2C_ReceiveByte</STRONG> (Thumb, 82 bytes, Stack size 32 bytes, ft6336_touch.o(i.I2C_ReceiveByte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = I2C_ReceiveByte &rArr; I2C_SDA_Input &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[13f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_ReadPin
@@ -1106,7 +1106,7 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FT6336_ReadReg
 </UL>
 
-<P><STRONG><a name="[13d]"></a>I2C_SDA_Input</STRONG> (Thumb, 36 bytes, Stack size 24 bytes, ft6336_touch.o(i.I2C_SDA_Input))
+<P><STRONG><a name="[13d]"></a>I2C_SDA_Input</STRONG> (Thumb, 38 bytes, Stack size 24 bytes, ft6336_touch.o(i.I2C_SDA_Input))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = I2C_SDA_Input &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
@@ -1116,7 +1116,7 @@ Global Symbols
 <LI><a href="#[13c]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_ReceiveAck
 </UL>
 
-<P><STRONG><a name="[140]"></a>I2C_SDA_Output</STRONG> (Thumb, 38 bytes, Stack size 24 bytes, ft6336_touch.o(i.I2C_SDA_Output))
+<P><STRONG><a name="[140]"></a>I2C_SDA_Output</STRONG> (Thumb, 40 bytes, Stack size 24 bytes, ft6336_touch.o(i.I2C_SDA_Output))
 <BR><BR>[Stack]<UL><LI>Max Depth = 64<LI>Call Chain = I2C_SDA_Output &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[139]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_Init
@@ -1128,8 +1128,8 @@ Global Symbols
 <LI><a href="#[128]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_SendAck
 </UL>
 
-<P><STRONG><a name="[128]"></a>I2C_SendAck</STRONG> (Thumb, 52 bytes, Stack size 8 bytes, ft6336_touch.o(i.I2C_SendAck))
-<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = I2C_SendAck &rArr; I2C_SDA_Output &rArr; HAL_GPIO_Init
+<P><STRONG><a name="[128]"></a>I2C_SendAck</STRONG> (Thumb, 56 bytes, Stack size 16 bytes, ft6336_touch.o(i.I2C_SendAck))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = I2C_SendAck &rArr; I2C_SDA_Output &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_SDA_Output
@@ -1138,8 +1138,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FT6336_ReadReg
 </UL>
 
-<P><STRONG><a name="[126]"></a>I2C_SendByte</STRONG> (Thumb, 70 bytes, Stack size 16 bytes, ft6336_touch.o(i.I2C_SendByte))
-<BR><BR>[Stack]<UL><LI>Max Depth = 96<LI>Call Chain = I2C_SendByte &rArr; I2C_ReceiveAck &rArr; I2C_SDA_Input &rArr; HAL_GPIO_Init
+<P><STRONG><a name="[126]"></a>I2C_SendByte</STRONG> (Thumb, 78 bytes, Stack size 24 bytes, ft6336_touch.o(i.I2C_SendByte))
+<BR><BR>[Stack]<UL><LI>Max Depth = 104<LI>Call Chain = I2C_SendByte &rArr; I2C_ReceiveAck &rArr; I2C_SDA_Input &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_SDA_Output
@@ -1149,8 +1149,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FT6336_ReadReg
 </UL>
 
-<P><STRONG><a name="[125]"></a>I2C_Start</STRONG> (Thumb, 64 bytes, Stack size 8 bytes, ft6336_touch.o(i.I2C_Start))
-<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = I2C_Start &rArr; I2C_SDA_Output &rArr; HAL_GPIO_Init
+<P><STRONG><a name="[125]"></a>I2C_Start</STRONG> (Thumb, 68 bytes, Stack size 16 bytes, ft6336_touch.o(i.I2C_Start))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = I2C_Start &rArr; I2C_SDA_Output &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_SDA_Output
@@ -1159,8 +1159,8 @@ Global Symbols
 <BR>[Called By]<UL><LI><a href="#[121]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FT6336_ReadReg
 </UL>
 
-<P><STRONG><a name="[129]"></a>I2C_Stop</STRONG> (Thumb, 50 bytes, Stack size 8 bytes, ft6336_touch.o(i.I2C_Stop))
-<BR><BR>[Stack]<UL><LI>Max Depth = 72<LI>Call Chain = I2C_Stop &rArr; I2C_SDA_Output &rArr; HAL_GPIO_Init
+<P><STRONG><a name="[129]"></a>I2C_Stop</STRONG> (Thumb, 54 bytes, Stack size 16 bytes, ft6336_touch.o(i.I2C_Stop))
+<BR><BR>[Stack]<UL><LI>Max Depth = 80<LI>Call Chain = I2C_Stop &rArr; I2C_SDA_Output &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[123]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;HAL_GPIO_WritePin
 <LI><a href="#[140]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;I2C_SDA_Output
@@ -8046,7 +8046,7 @@ Local Symbols
 <BR>[Address Reference Count : 1]<UL><LI> lv_port_disp_template.o(i.lv_port_disp_init)
 </UL>
 <P><STRONG><a name="[a5]"></a>touchpad_read</STRONG> (Thumb, 52 bytes, Stack size 24 bytes, lv_port_indev_template.o(i.touchpad_read))
-<BR><BR>[Stack]<UL><LI>Max Depth = 152<LI>Call Chain = touchpad_read &rArr; FT6336_GetTouchPoint &rArr; FT6336_ReadReg &rArr; I2C_SendByte &rArr; I2C_ReceiveAck &rArr; I2C_SDA_Input &rArr; HAL_GPIO_Init
+<BR><BR>[Stack]<UL><LI>Max Depth = 160<LI>Call Chain = touchpad_read &rArr; FT6336_GetTouchPoint &rArr; FT6336_ReadReg &rArr; I2C_SendByte &rArr; I2C_ReceiveAck &rArr; I2C_SDA_Input &rArr; HAL_GPIO_Init
 </UL>
 <BR>[Calls]<UL><LI><a href="#[120]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FT6336_GetTouchStatus
 <LI><a href="#[11f]">&gt;&gt;</a>&nbsp;&nbsp;&nbsp;FT6336_GetTouchPoint

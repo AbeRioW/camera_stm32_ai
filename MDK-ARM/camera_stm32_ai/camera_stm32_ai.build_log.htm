@@ -22,11 +22,35 @@ Dialog DLL:      TCM.DLL V1.56.4.0
  
 <h2>Project:</h2>
 C:\Users\ypwan\Desktop\ai_camera\camera_stm32_ai\MDK-ARM\camera_stm32_ai.uvprojx
-Project File Date:  02/02/2026
+Project File Date:  02/03/2026
 
 <h2>Output:</h2>
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'D:\Program Files\KEIL5\ARM\ARMCC\Bin'
 Build target 'camera_stm32_ai'
+assembling startup_stm32f407xx.s...
+compiling lcd_ILI9341V.c...
+..\APP\lcd_ILI9341V.h(38): warning:  #1295-D: Deprecated declaration ILI9341_Unselect - give arg types
+  void ILI9341_Unselect();
+..\APP\lcd_ILI9341V.h(48): warning:  #1295-D: Deprecated declaration ILI9341_Select - give arg types
+   void ILI9341_Select() ;
+..\APP\lcd_ILI9341V.c: 2 warnings, 0 errors
+compiling stm32f4xx_hal_msp.c...
+compiling spi.c...
+compiling ft6336_touch.c...
+..\APP\ft6336_touch.c(62): warning:  #188-D: enumerated type mixed with another type
+      HAL_GPIO_WritePin(I2C_SDA_PORT, I2C_SDA_PIN, ack);
+..\APP\ft6336_touch.c(85): warning:  #188-D: enumerated type mixed with another type
+          HAL_GPIO_WritePin(I2C_SDA_PORT, I2C_SDA_PIN, (byte & 0x80) >> 7);
+..\APP\ft6336_touch.c: 2 warnings, 0 errors
+compiling gpio.c...
+compiling lv_port_indev_template.c...
+compiling stm32f4xx_it.c...
+compiling lv_port_disp_template.c...
+../APP/lcd_ILI9341V.h(38): warning:  #1295-D: Deprecated declaration ILI9341_Unselect - give arg types
+  void ILI9341_Unselect();
+../APP/lcd_ILI9341V.h(48): warning:  #1295-D: Deprecated declaration ILI9341_Select - give arg types
+   void ILI9341_Select() ;
+..\LVGL\GUI\examples\porting\lv_port_disp_template.c: 2 warnings, 0 errors
 compiling main.c...
 ../APP/lcd_ILI9341V.h(38): warning:  #1295-D: Deprecated declaration ILI9341_Unselect - give arg types
   void ILI9341_Unselect();
@@ -34,9 +58,9 @@ compiling main.c...
    void ILI9341_Select() ;
 ../Core/Src/main.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=147030 RO-data=18414 RW-data=516 ZI-data=114572  
+Program Size: Code=147066 RO-data=18414 RW-data=516 ZI-data=114572  
 FromELF: creating hex file...
-"camera_stm32_ai\camera_stm32_ai.axf" - 0 Error(s), 2 Warning(s).
+"camera_stm32_ai\camera_stm32_ai.axf" - 0 Error(s), 8 Warning(s).
 
 <h2>Software Packages used:</h2>
 
@@ -59,7 +83,7 @@ Package Vendor: Keil
 
    * Component: ARM::CMSIS:CORE:5.6.0
       Include file:  CMSIS/Core/Include/tz_context.h
-Build Time Elapsed:  00:00:04
+Build Time Elapsed:  00:00:06
 </pre>
 </body>
 </html>
