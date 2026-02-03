@@ -1,10 +1,10 @@
 Dependencies for Project 'camera_stm32_ai', Target 'camera_stm32_ai': (DO NOT MODIFY !)
 CompilerVersion: 5060750::V5.06 update 6 (build 750)::.\ARMCC
-F (startup_stm32f407xx.s)(0x6981A2AD)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include--pd "__UVISION_VERSION SETA 538" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f407xx.lst --xref -o camera_stm32_ai\startup_stm32f407xx.o --depend camera_stm32_ai\startup_stm32f407xx.d)
-F (../Core/Src/main.c)(0x698072BA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\main.o --omf_browse camera_stm32_ai\main.crf --depend camera_stm32_ai\main.d)
-I (../Core/Inc/main.h)(0x6981A2AC)
+F (startup_stm32f407xx.s)(0x6981B736)(--cpu Cortex-M4.fp.sp -g --apcs=interwork -I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include--pd "__UVISION_VERSION SETA 538" --pd "_RTE_ SETA 1" --pd "STM32F407xx SETA 1" --pd "_RTE_ SETA 1"--list startup_stm32f407xx.lst --xref -o camera_stm32_ai\startup_stm32f407xx.o --depend camera_stm32_ai\startup_stm32f407xx.d)
+F (../Core/Src/main.c)(0x6981B735)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\main.o --omf_browse camera_stm32_ai\main.crf --depend camera_stm32_ai\main.d)
+I (../Core/Inc/main.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -25,12 +25,16 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
+I (../Core/Inc/dcmi.h)(0x6981B734)
+I (../Core/Inc/dma.h)(0x6981B734)
 I (../Core/Inc/spi.h)(0x69805F06)
 I (../Core/Inc/gpio.h)(0x69805F06)
 I (../APP/lcd_ILI9341V.h)(0x69805F06)
@@ -159,11 +163,11 @@ I (../LVGL/GUI/examples/porting/lv_port_indev_template.h)(0x69806F0B)
 I (../LVGL/GUI/demos/stress/lv_demo_stress.h)(0x69805F08)
 I (../LVGL/GUI/demos/stress/../lv_demos.h)(0x69805F07)
 I (../LVGL/GUI/demos/stress/../stress/lv_demo_stress.h)(0x69805F08)
-F (../Core/Src/gpio.c)(0x6981A2AC)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\gpio.o --omf_browse camera_stm32_ai\gpio.crf --depend camera_stm32_ai\gpio.d)
+F (../Core/Src/gpio.c)(0x6981B733)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\gpio.o --omf_browse camera_stm32_ai\gpio.crf --depend camera_stm32_ai\gpio.d)
 I (../Core/Inc/gpio.h)(0x69805F06)
-I (../Core/Inc/main.h)(0x6981A2AC)
+I (../Core/Inc/main.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -184,17 +188,85 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
-F (../Core/Src/spi.c)(0x69805F06)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\spi.o --omf_browse camera_stm32_ai\spi.crf --depend camera_stm32_ai\spi.d)
+F (../Core/Src/dcmi.c)(0x6981B734)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\dcmi.o --omf_browse camera_stm32_ai\dcmi.crf --depend camera_stm32_ai\dcmi.d)
+I (../Core/Inc/dcmi.h)(0x6981B734)
+I (../Core/Inc/main.h)(0x6981B734)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6964A2AA)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x6964A2AB)
+I (D:\Program Files\KEIL5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6964A2AA)
+I (D:\Program Files\KEIL5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
+F (../Core/Src/dma.c)(0x6981B734)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\dma.o --omf_browse camera_stm32_ai\dma.crf --depend camera_stm32_ai\dma.d)
+I (../Core/Inc/dma.h)(0x6981B734)
+I (../Core/Inc/main.h)(0x6981B734)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6964A2AA)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x6964A2AB)
+I (D:\Program Files\KEIL5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6964A2AA)
+I (D:\Program Files\KEIL5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
+F (../Core/Src/spi.c)(0x6981B734)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\spi.o --omf_browse camera_stm32_ai\spi.crf --depend camera_stm32_ai\spi.d)
 I (../Core/Inc/spi.h)(0x69805F06)
-I (../Core/Inc/main.h)(0x6981A2AC)
+I (../Core/Inc/main.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -215,16 +287,18 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
-F (../Core/Src/stm32f4xx_it.c)(0x69805F06)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_it.o --omf_browse camera_stm32_ai\stm32f4xx_it.crf --depend camera_stm32_ai\stm32f4xx_it.d)
-I (../Core/Inc/main.h)(0x6981A2AC)
+F (../Core/Src/stm32f4xx_it.c)(0x6981B734)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_it.o --omf_browse camera_stm32_ai\stm32f4xx_it.crf --depend camera_stm32_ai\stm32f4xx_it.d)
+I (../Core/Inc/main.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -245,13 +319,15 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_it.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_it.h)(0x6981B734)
 I (../LVGL/GUI/lvgl.h)(0x69805F08)
 I (../LVGL/GUI/src/misc/lv_log.h)(0x69805F08)
 I (../LVGL/GUI/src/misc/../lv_conf_internal.h)(0x69805F08)
@@ -373,9 +449,9 @@ I (../LVGL/GUI/src/extra/libs/freetype/lv_freetype.h)(0x69805F08)
 I (../LVGL/GUI/src/extra/libs/rlottie/lv_rlottie.h)(0x69805F08)
 I (../LVGL/GUI/src/extra/libs/ffmpeg/lv_ffmpeg.h)(0x69805F08)
 F (../Core/Src/stm32f4xx_hal_msp.c)(0x69805F06)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_hal_msp.o --omf_browse camera_stm32_ai\stm32f4xx_hal_msp.crf --depend camera_stm32_ai\stm32f4xx_hal_msp.d)
-I (../Core/Inc/main.h)(0x6981A2AC)
+I (../Core/Inc/main.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -396,15 +472,17 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
-F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c)(0x6964A2AA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_hal_spi.o --omf_browse camera_stm32_ai\stm32f4xx_hal_spi.crf --depend camera_stm32_ai\stm32f4xx_hal_spi.d)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi.c)(0x6964A2AA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_hal_dcmi.o --omf_browse camera_stm32_ai\stm32f4xx_hal_dcmi.crf --depend camera_stm32_ai\stm32f4xx_hal_dcmi.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -425,6 +503,39 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dcmi_ex.c)(0x6964A2AA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_hal_dcmi_ex.o --omf_browse camera_stm32_ai\stm32f4xx_hal_dcmi_ex.crf --depend camera_stm32_ai\stm32f4xx_hal_dcmi_ex.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6964A2AA)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x6964A2AB)
+I (D:\Program Files\KEIL5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6964A2AA)
+I (D:\Program Files\KEIL5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
@@ -433,7 +544,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc.c)(0x6964A2AA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_hal_rcc.o --omf_browse camera_stm32_ai\stm32f4xx_hal_rcc.crf --depend camera_stm32_ai\stm32f4xx_hal_rcc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -454,6 +565,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
@@ -462,7 +575,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_rcc_ex.c)(0x6964A2AA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_hal_rcc_ex.o --omf_browse camera_stm32_ai\stm32f4xx_hal_rcc_ex.crf --depend camera_stm32_ai\stm32f4xx_hal_rcc_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -483,6 +596,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
@@ -491,7 +606,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash.c)(0x6964A2AA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_hal_flash.o --omf_browse camera_stm32_ai\stm32f4xx_hal_flash.crf --depend camera_stm32_ai\stm32f4xx_hal_flash.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -512,6 +627,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
@@ -520,7 +637,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ex.c)(0x6964A2AA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_hal_flash_ex.o --omf_browse camera_stm32_ai\stm32f4xx_hal_flash_ex.crf --depend camera_stm32_ai\stm32f4xx_hal_flash_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -541,6 +658,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
@@ -549,7 +668,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_flash_ramfunc.c)(0x6964A2AA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_hal_flash_ramfunc.o --omf_browse camera_stm32_ai\stm32f4xx_hal_flash_ramfunc.crf --depend camera_stm32_ai\stm32f4xx_hal_flash_ramfunc.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -570,6 +689,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
@@ -578,7 +699,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_gpio.c)(0x6964A2AA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_hal_gpio.o --omf_browse camera_stm32_ai\stm32f4xx_hal_gpio.crf --depend camera_stm32_ai\stm32f4xx_hal_gpio.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -599,6 +720,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
@@ -607,7 +730,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma_ex.c)(0x6964A2AA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_hal_dma_ex.o --omf_browse camera_stm32_ai\stm32f4xx_hal_dma_ex.crf --depend camera_stm32_ai\stm32f4xx_hal_dma_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -628,6 +751,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
@@ -636,7 +761,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_dma.c)(0x6964A2AA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_hal_dma.o --omf_browse camera_stm32_ai\stm32f4xx_hal_dma.crf --depend camera_stm32_ai\stm32f4xx_hal_dma.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -657,6 +782,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
@@ -665,7 +792,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr.c)(0x6964A2AA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_hal_pwr.o --omf_browse camera_stm32_ai\stm32f4xx_hal_pwr.crf --depend camera_stm32_ai\stm32f4xx_hal_pwr.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -686,6 +813,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
@@ -694,7 +823,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_pwr_ex.c)(0x6964A2AA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_hal_pwr_ex.o --omf_browse camera_stm32_ai\stm32f4xx_hal_pwr_ex.crf --depend camera_stm32_ai\stm32f4xx_hal_pwr_ex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -715,6 +844,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
@@ -723,7 +854,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_cortex.c)(0x6964A2AA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_hal_cortex.o --omf_browse camera_stm32_ai\stm32f4xx_hal_cortex.crf --depend camera_stm32_ai\stm32f4xx_hal_cortex.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -744,6 +875,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
@@ -752,7 +885,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal.c)(0x6964A2AA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_hal.o --omf_browse camera_stm32_ai\stm32f4xx_hal.crf --depend camera_stm32_ai\stm32f4xx_hal.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -773,6 +906,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
@@ -781,7 +916,7 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
 F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_exti.c)(0x6964A2AA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_hal_exti.o --omf_browse camera_stm32_ai\stm32f4xx_hal_exti.crf --depend camera_stm32_ai\stm32f4xx_hal_exti.d)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -802,6 +937,39 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
+F (../Drivers/STM32F4xx_HAL_Driver/Src/stm32f4xx_hal_spi.c)(0x6964A2AA)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\stm32f4xx_hal_spi.o --omf_browse camera_stm32_ai\stm32f4xx_hal_spi.crf --depend camera_stm32_ai\stm32f4xx_hal_spi.d)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6964A2AA)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x6964A2AB)
+I (D:\Program Files\KEIL5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6964A2AA)
+I (D:\Program Files\KEIL5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
@@ -819,7 +987,7 @@ I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6964A2AB)
 I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6964A2AB)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6964A2AA)
@@ -831,6 +999,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
@@ -839,9 +1009,9 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
 F (..\APP\lcd_ILI9341V.c)(0x69805F06)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\lcd_ili9341v.o --omf_browse camera_stm32_ai\lcd_ili9341v.crf --depend camera_stm32_ai\lcd_ili9341v.d)
 I (..\APP\lcd_ILI9341V.h)(0x69805F06)
-I (../Core/Inc/main.h)(0x6981A2AC)
+I (../Core/Inc/main.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -862,6 +1032,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
@@ -873,9 +1045,9 @@ I (D:\Program Files\KEIL5\ARM\ARMCC\include\stdbool.h)(0x5D9B3488)
 F (..\APP\lcd_ILI9341V.h)(0x69805F06)()
 F (..\APP\ft6336_touch.c)(0x6981A2C6)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\ft6336_touch.o --omf_browse camera_stm32_ai\ft6336_touch.crf --depend camera_stm32_ai\ft6336_touch.d)
 I (..\APP\ft6336_touch.h)(0x69806B45)
-I (../Core/Inc/main.h)(0x6981A2AC)
+I (../Core/Inc/main.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -896,12 +1068,48 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
+F (..\APP\ov2640.c)(0x6981B9A2)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\ov2640.o --omf_browse camera_stm32_ai\ov2640.crf --depend camera_stm32_ai\ov2640.d)
+I (..\APP\ov2640.h)(0x6981B8B4)
+I (../Core/Inc/main.h)(0x6981B734)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h)(0x6964A2AA)
+I (../Drivers/CMSIS/Include/core_cm4.h)(0x6964A2AB)
+I (D:\Program Files\KEIL5\ARM\ARMCC\include\stdint.h)(0x5D9B3488)
+I (../Drivers/CMSIS/Include/cmsis_version.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Include/cmsis_compiler.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Include/cmsis_armcc.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Include/mpu_armv7.h)(0x6964A2AB)
+I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h)(0x6964A2AA)
+I (D:\Program Files\KEIL5\ARM\ARMCC\include\stddef.h)(0x5D9B3488)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h)(0x6964A2AA)
+F (..\APP\ov2640.h)(0x6981B8B4)()
 F (..\LVGL\GUI\examples\porting\lv_port_disp_template.c)(0x69805F08)(--c99 -c --cpu Cortex-M4.fp.sp -g -O3 --apcs=interwork --split_sections -I ../Core/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc -I ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy -I ../Drivers/CMSIS/Device/ST/STM32F4xx/Include -I ../Drivers/CMSIS/Include -I ../APP -I ../LVGL -I ../LVGL/GUI -I ../LVGL/GUI/src -I ../LVGL/GUI/examples/porting -I ../LVGL/GUI/demos/stress -I ../LVGL/GUI/demos/stress/assets-I.\RTE\_camera_stm32_ai-IC:\Users\ypwan\AppData\Local\Arm\Packs\ARM\CMSIS\5.9.0\CMSIS\Core\Include-D__UVISION_VERSION="538" -D_RTE_ -DSTM32F407xx -D_RTE_ -DUSE_HAL_DRIVER -DSTM32F407xx-o camera_stm32_ai\lv_port_disp_template.o --omf_browse camera_stm32_ai\lv_port_disp_template.crf --depend camera_stm32_ai\lv_port_disp_template.d)
 I (..\LVGL\GUI\examples\porting\lv_port_disp_template.h)(0x69805F08)
 I (../LVGL/GUI/lvgl.h)(0x69805F08)
@@ -1027,9 +1235,9 @@ I (../LVGL/GUI/src/extra/libs/freetype/lv_freetype.h)(0x69805F08)
 I (../LVGL/GUI/src/extra/libs/rlottie/lv_rlottie.h)(0x69805F08)
 I (../LVGL/GUI/src/extra/libs/ffmpeg/lv_ffmpeg.h)(0x69805F08)
 I (../Core/Inc/spi.h)(0x69805F06)
-I (../Core/Inc/main.h)(0x6981A2AC)
+I (../Core/Inc/main.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -1048,6 +1256,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)
@@ -1180,9 +1390,9 @@ I (../LVGL/GUI/src/extra/libs/freetype/lv_freetype.h)(0x69805F08)
 I (../LVGL/GUI/src/extra/libs/rlottie/lv_rlottie.h)(0x69805F08)
 I (../LVGL/GUI/src/extra/libs/ffmpeg/lv_ffmpeg.h)(0x69805F08)
 I (../APP/ft6336_touch.h)(0x69806B45)
-I (../Core/Inc/main.h)(0x6981A2AC)
+I (../Core/Inc/main.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h)(0x6964A2AA)
-I (../Core/Inc/stm32f4xx_hal_conf.h)(0x69805F06)
+I (../Core/Inc/stm32f4xx_hal_conf.h)(0x6981B734)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.h)(0x6964A2AA)
 I (../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h)(0x6964A2AA)
@@ -1201,6 +1411,8 @@ I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h)(0x6964A2AA)
+I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h)(0x6964A2AA)
 I (../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h)(0x6964A2AA)

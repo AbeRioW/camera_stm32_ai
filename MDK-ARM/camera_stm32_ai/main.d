@@ -23,12 +23,16 @@ camera_stm32_ai\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_exti.h
 camera_stm32_ai\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma.h
 camera_stm32_ai\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dma_ex.h
 camera_stm32_ai\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_cortex.h
+camera_stm32_ai\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi.h
+camera_stm32_ai\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_dcmi_ex.h
 camera_stm32_ai\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash.h
 camera_stm32_ai\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ex.h
 camera_stm32_ai\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flash_ramfunc.h
 camera_stm32_ai\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 camera_stm32_ai\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 camera_stm32_ai\main.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
+camera_stm32_ai\main.o: ../Core/Inc/dcmi.h
+camera_stm32_ai\main.o: ../Core/Inc/dma.h
 camera_stm32_ai\main.o: ../Core/Inc/spi.h
 camera_stm32_ai\main.o: ../Core/Inc/gpio.h
 camera_stm32_ai\main.o: ../APP/lcd_ILI9341V.h
