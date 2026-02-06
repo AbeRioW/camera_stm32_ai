@@ -5,7 +5,7 @@
 #include "spi.h"
 #include "stdbool.h"
 
-#define ILI9341_SPI_PORT hspi1
+#define ILI9341_SPI_PORT hspi2
 extern SPI_HandleTypeDef ILI9341_SPI_PORT;
 
 #define ILI9341_MADCTL_MY  0x80

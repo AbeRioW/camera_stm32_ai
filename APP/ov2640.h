@@ -58,5 +58,6 @@ void OV2640_SetSaturation(uint8_t saturation);
 void OV2640_StartCapture(void);
 void OV2640_StopCapture(void);
 void OV2640_ReadFrame(uint8_t *buffer, uint32_t size);
+void OV2640_DisplayImage(void);
 
 #endif /* __OV2640_H__ */

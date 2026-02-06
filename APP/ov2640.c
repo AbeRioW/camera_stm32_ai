@@ -1,4 +1,5 @@
 #include "ov2640.h"
+#include "lvgl.h"
 
 // 全局变量
 static OV2640_StatusTypeDef ov2640_status = OV2640_STATUS_IDLE;
@@ -338,4 +339,78 @@ static uint8_t SCCB_ReceiveByte(void) {
     }
     
     return byte;
+}
+
+// 显示图像到LVGL
+void OV2640_DisplayImage(void) {
+    uint8_t *image_buffer = NULL;
+    uint32_t buffer_size = 0;
+    uint16_t width = 0, height = 0;
+    
+    // 根据分辨率确定缓冲区大小和图像尺寸
+    switch (ov2640_config.resolution) {
+        case OV2640_RES_160x120:
+            width = 160;
+            height = 120;
+            buffer_size = width * height * 2; // RGB565格式
+            break;
+        case OV2640_RES_320x240:
+            width = 320;
+            height = 240;
+            buffer_size = width * height * 2; // RGB565格式
+            break;
+        case OV2640_RES_640x480:
+            width = 640;
+            height = 480;
+            buffer_size = width * height * 2; // RGB565格式
+            break;
+        default:
+            width = 320;
+            height = 240;
+            buffer_size = width * height * 2; // 默认使用320x240
+            break;
+    }
+    
+    // 分配缓冲区
+    image_buffer = (uint8_t *)malloc(buffer_size);
+    if (image_buffer == NULL) {
+        return;
+    }
+    
+    // 启动捕获
+    OV2640_StartCapture();
+    
+    // 读取图像数据
+    OV2640_ReadFrame(image_buffer, buffer_size);
+    
+    // 将图像显示到LVGL
+    if (ov2640_config.format == OV2640_FORMAT_RGB565) {
+        // 创建LVGL图像缓冲区
+        static lv_img_dsc_t img_dsc;
+        img_dsc.header.always_zero = 0;
+        img_dsc.header.w = width;
+        img_dsc.header.h = height;
+        img_dsc.header.cf = LV_IMG_CF_TRUE_COLOR; // RGB565格式
+        img_dsc.data_size = buffer_size;
+        img_dsc.data = (uint8_t *)image_buffer;
+        
+        // 创建或获取画布对象
+        static lv_obj_t *canvas = NULL;
+        if (canvas == NULL) {
+            // 如果画布不存在，创建一个新的
+            canvas = lv_img_create(lv_scr_act());
+            lv_obj_center(canvas);
+        }
+        
+        // 显示图像
+        lv_img_set_src(canvas, &img_dsc);
+    }
+    
+    // 停止捕获
+    OV2640_StopCapture();
+    
+    // 释放缓冲区
+    // 注意：如果LVGL仍然在使用这个缓冲区，需要确保在释放前图像已经显示完成
+    // 这里简化处理，直接释放
+    free(image_buffer);
 }
