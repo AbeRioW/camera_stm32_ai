@@ -9,8 +9,11 @@ static OV2640_StatusTypeDef ov2640_status = OV2640_STATUS_IDLE;
 static OV2640_ConfigTypeDef ov2640_config;
 
 // 图像缓冲区 - 用于DCMI DMA传输
-static uint8_t *image_buffer = NULL;
+static uint8_t image_buffer[40 * 40 * 2]; // 40x40 RGB565 全局缓冲区
 static volatile uint8_t frame_ready = 0;
+
+// 外部变量声明
+extern DCMI_HandleTypeDef hdcmi;
 
 // SCCB引脚定义
 #define SCCB_SCL_PIN SCCB_SCL_Pin
@@ -41,88 +44,34 @@ static void delay_us(uint32_t us) {
     for (volatile uint32_t i = 0; i < us * 20; i++);
 }
 
-// OV2640初始化寄存器配置 - 基础配置
+// OV2640初始化寄存器配置 - 简化配置，确保基本功能
 static const uint8_t ov2640_init_regs[][2] = {
     {0xFF, 0x00},  // 切换到DSP bank
     {0x2C, 0xFF},  // 复位
     {0x2E, 0xDF},  // 复位
     {0xFF, 0x01},  // 切换到Sensor bank
+    {0x12, 0x80},  // 软件复位
+    {0xFF, 0x01},  // 切换到Sensor bank
+    {0x12, 0x04},  // RGB565格式
+    {0x0C, 0x00},  // 输出驱动能力
+    {0x11, 0x00},  // 时钟分频 (12MHz输入时钟)
     {0x3C, 0x32},  // 时钟设置
-    {0x11, 0x00},  // 时钟分频
-    {0x09, 0x02},  // 输出驱动能力
-    {0x04, 0x28},  // 镜像/翻转
-    {0x13, 0xE5},  // 自动增益/曝光
-    {0x14, 0x48},  // 自动增益上限
-    {0x2C, 0x0C},  // 自动曝光
-    {0x33, 0x78},  // 亮度
-    {0x3A, 0x33},  // 色度
-    {0x3B, 0xFB},  // 背光补偿
-    {0x3E, 0x00},  // 自动白平衡
-    {0x43, 0x11},  // 自动白平衡
-    {0x16, 0x10},  // 水平翻转
-    {0x39, 0x02},  // 自动曝光
-    {0x35, 0x88},  // 自动曝光
-    {0x22, 0x0A},  // 自动曝光
-    {0x37, 0x40},  // 自动曝光
-    {0x23, 0x00},  // 自动曝光
-    {0x34, 0xA0},  // 自动曝光
-    {0x06, 0x02},  // 自动曝光
-    {0x06, 0x88},  // 自动曝光
-    {0x07, 0xC0},  // 自动曝光
-    {0x0D, 0x87},  // 自动曝光
-    {0x0E, 0x41},  // 自动曝光
-    {0x4C, 0x00},  // 自动曝光
-    {0x48, 0x00},  // 自动曝光
-    {0x5B, 0x00},  // 自动曝光
-    {0x42, 0x03},  // 自动曝光
-    {0x4A, 0x81},  // 自动曝光
-    {0x21, 0x99},  // 自动曝光
-    {0x24, 0x40},  // 自动曝光
-    {0x25, 0x38},  // 自动曝光
-    {0x26, 0x82},  // 自动曝光
-    {0x5C, 0x00},  // 自动曝光
-    {0x63, 0x00},  // 自动曝光
-    {0x46, 0x00},  // 帧率
-    {0x0C, 0x3C},  // 输出格式
-    {0x61, 0x70},  // 自动曝光
-    {0x62, 0x80},  // 自动曝光
-    {0x7C, 0x05},  // 自动曝光
-    {0x20, 0x80},  // 自动曝光
-    {0x28, 0x30},  // 自动曝光
-    {0x6C, 0x00},  // 自动曝光
-    {0x6D, 0x80},  // 自动曝光
-    {0x6E, 0x00},  // 自动曝光
-    {0x70, 0x02},  // 自动曝光
-    {0x71, 0x94},  // 自动曝光
-    {0x73, 0xC1},  // 自动曝光
-    {0x12, 0x40},  // 输出格式 - RGB
+    {0x03, 0x1F},  // 同步信号配置 - 启用所有同步信号
+    {0x04, 0x00},  // 禁用镜像/翻转
+    {0x16, 0x00},  // 禁用水平翻转
     {0x17, 0x11},  // 水平起始
     {0x18, 0x43},  // 水平结束
     {0x19, 0x00},  // 垂直起始
     {0x1A, 0x4B},  // 垂直结束
-    {0x32, 0x09},  // 水平输出大小
-    {0x37, 0xC0},  // 垂直输出大小
+    {0x32, 0x0A},  // 水平输出大小 40
+    {0x37, 0x0A},  // 垂直输出大小 40
     {0xFF, 0x00},  // 切换到DSP bank
-    {0xE5, 0x7F},  // 使能DSP
-    {0xF9, 0xC0},  // 使能DSP
+    {0x8C, 0x00},  // 输出格式
     {0x41, 0x24},  // 时钟设置
-    {0xE0, 0x14},  // 复位JPEG
-    {0x76, 0xFF},  // 自动白平衡
-    {0x33, 0xA0},  // 自动白平衡
-    {0x42, 0x20},  // 自动白平衡
-    {0x43, 0x18},  // 自动白平衡
-    {0x4C, 0x00},  // 自动白平衡
-    {0x87, 0xD5},  // 自动白平衡
-    {0x88, 0x3F},  // 自动白平衡
-    {0xD7, 0x03},  // 自动白平衡
-    {0xD9, 0x10},  // 自动白平衡
-    {0xD3, 0x82},  // 自动白平衡
-    {0xC8, 0x08},  // 自动白平衡
-    {0xC9, 0x80},  // 自动白平衡
-    {0xFF, 0x01},  // 切换到Sensor bank
-    {0x11, 0x00},  // 时钟分频
-    {0xFF, 0x00},  // 切换到DSP bank
-    {0x15, 0x00},  // 输出格式
+    {0x70, 0x33},  // 时钟配置
+    {0x71, 0x33},  // 时钟配置
+    {0x72, 0x11},  // 时钟配置
+    {0x73, 0xF0},  // 时钟配置
     {0x00, 0x00}   // 结束标记
 };
 
@@ -157,6 +106,43 @@ static const uint8_t ov2640_qvga_regs[][2] = {
     {0xFF, 0x00},  // 切换到DSP bank
     {0xDA, 0x08},  // 图像水平输出大小 320
     {0xD7, 0x03},  // 图像垂直输出大小 240
+    {0xE0, 0x00},  // 复位完成
+    {0x00, 0x00}   // 结束标记
+};
+
+// OV2640 40x40分辨率配置
+static const uint8_t ov2640_40x40_regs[][2] = {
+    {0xFF, 0x01},  // 切换到Sensor bank
+    {0x12, 0x04},  // RGB565格式
+    {0x17, 0x11},  // 水平起始
+    {0x18, 0x43},  // 水平结束
+    {0x19, 0x00},  // 垂直起始
+    {0x1A, 0x4B},  // 垂直结束
+    {0x32, 0x0A},  // 水平输出大小 40 (0x0A = 10 * 4)
+    {0x37, 0x0A},  // 垂直输出大小 40 (0x0A = 10 * 4)
+    {0x03, 0x0F},  // 同步信号配置
+    {0x3C, 0x32},  // 时钟设置
+    {0xFF, 0x00},  // 切换到DSP bank
+    {0xE0, 0x04},  // 复位
+    {0xC0, 0x05},  // HSIZE8 40 (0x05 = 5 * 8)
+    {0xC1, 0x05},  // VSIZE8 40 (0x05 = 5 * 8)
+    {0x8C, 0x00},  // 输出格式
+    {0x86, 0x3D},  // SDE, UV, 缩放使能
+    {0xD5, 0x28},  // 缩放输出宽度 40 (0x28 = 40)
+    {0xD6, 0x28},  // 缩放输出高度 40 (0x28 = 40)
+    {0xD7, 0x03},  // 缩放设置
+    {0xD8, 0x90},  // 缩放设置
+    {0xD9, 0x12},  // 缩放设置
+    {0xDA, 0x28},  // 缩放设置
+    {0xDB, 0x1E},  // 缩放设置
+    {0xDC, 0x1E},  // 缩放设置
+    {0xDD, 0x1E},  // 缩放设置
+    {0xDE, 0x1E},  // 缩放设置
+    {0xE0, 0x00},  // 缩放设置
+    {0x71, 0x00},  // 时钟设置
+    {0x41, 0x24},  // 时钟设置
+    {0xDA, 0x05},  // 图像水平输出大小 40 (0x05 = 5 * 8)
+    {0xD7, 0x05},  // 图像垂直输出大小 40 (0x05 = 5 * 8)
     {0xE0, 0x00},  // 复位完成
     {0x00, 0x00}   // 结束标记
 };
@@ -203,22 +189,20 @@ void OV2640_Init(void) {
     // 初始化SCCB
     SCCB_Init();
     
-    // 使能摄像头电源
-    HAL_GPIO_WritePin(OV2640_PWDN_GPIO_Port, OV2640_PWDN_Pin, GPIO_PIN_SET);
-    HAL_Delay(10);
+    // 初始化PWDN引脚为低电平，启用摄像头
     HAL_GPIO_WritePin(OV2640_PWDN_GPIO_Port, OV2640_PWDN_Pin, GPIO_PIN_RESET);
-    HAL_Delay(10);
+    HAL_Delay(100); // 增加延时
     
     // 复位摄像头
     HAL_GPIO_WritePin(OV2640_RST_GPIO_Port, OV2640_RST_Pin, GPIO_PIN_RESET);
-    HAL_Delay(10);
+    HAL_Delay(100); // 增加延时
     HAL_GPIO_WritePin(OV2640_RST_GPIO_Port, OV2640_RST_Pin, GPIO_PIN_SET);
-    HAL_Delay(100); // 增加延时以确保摄像头稳定
+    HAL_Delay(200); // 增加延时以确保摄像头稳定
     
     // 软件复位
     OV2640_SelectBank(1); // 切换到Sensor bank
     OV2640_I2C_Write(0x12, 0x80); // COM7寄存器，软件复位
-    HAL_Delay(50);
+    HAL_Delay(100); // 增加延时
     
     // 检查传感器ID
     uint8_t id_h = OV2640_I2C_Read(OV2640_REG_SENSOR_ID_H);
@@ -244,19 +228,86 @@ void OV2640_Init(void) {
     // 写入初始化寄存器配置
     for (int i = 0; ov2640_init_regs[i][0] != 0x00 || ov2640_init_regs[i][1] != 0x00; i++) {
         OV2640_I2C_Write(ov2640_init_regs[i][0], ov2640_init_regs[i][1]);
-        HAL_Delay(1); // 增加延时以确保寄存器写入完成
+        HAL_Delay(2); // 增加延时以确保寄存器写入完成
     }
     
-    // 设置默认分辨率
-    OV2640_SetResolution(OV2640_RES_320x240);
+    // 设置输出格式为RGB565（参考探索者开发板的配置）
+    OV2640_SelectBank(0); // 切换到DSP bank
+    OV2640_I2C_Write(0xDA, 0x09); // 图像水平输出大小
+    OV2640_I2C_Write(0xD7, 0x03); // 图像垂直输出大小
+    OV2640_I2C_Write(0xDF, 0x02); // 图像格式设置
+    OV2640_I2C_Write(0x33, 0xA0); // 图像格式设置
+    OV2640_SelectBank(1); // 切换到Sensor bank
+    OV2640_I2C_Write(0x3C, 0x00); // 时钟设置
+    OV2640_SelectBank(0); // 切换到DSP bank
+    OV2640_I2C_Write(0xE1, 0x67); // 图像格式设置
+    OV2640_SelectBank(1); // 切换到Sensor bank
+    OV2640_I2C_Write(0xE0, 0x00); // 图像格式设置
+    OV2640_I2C_Write(0xE1, 0x00); // 图像格式设置
+    OV2640_I2C_Write(0xE5, 0x00); // 图像格式设置
+    OV2640_SelectBank(0); // 切换到DSP bank
+    OV2640_I2C_Write(0xD7, 0x00); // 图像垂直输出大小
+    OV2640_I2C_Write(0xDA, 0x00); // 图像水平输出大小
+    OV2640_I2C_Write(0xE0, 0x00); // 图像格式设置
     
-    // 设置默认格式
-    OV2640_SetFormat(OV2640_FORMAT_RGB565);
+    // 再次设置输出格式为RGB565，确保不会被初始化配置覆盖
+    OV2640_SelectBank(1); // 切换到Sensor bank
+    OV2640_I2C_Write(0x12, 0x04); // RGB565格式
+    OV2640_SelectBank(0); // 切换到DSP bank
+    OV2640_I2C_Write(0x8C, 0x00); // 输出格式设置为RGB
+    
+    // 再次设置时钟，确保不会被初始化配置覆盖
+    OV2640_SelectBank(1); // 切换到Sensor bank
+    OV2640_I2C_Write(0x11, 0x00); // 时钟分频
+    OV2640_I2C_Write(0x3C, 0x32); // 时钟设置
+    OV2640_SelectBank(0); // 切换到DSP bank
+    OV2640_I2C_Write(0x41, 0x24); // 时钟设置
+    
+    // 设置默认分辨率
+    OV2640_SetResolution(OV2640_RES_40x40);
+    
+    // 再次设置输出格式为RGB565，确保不会被分辨率配置覆盖
+    OV2640_SelectBank(1); // 切换到Sensor bank
+    OV2640_I2C_Write(0x12, 0x04); // RGB565格式
+    OV2640_SelectBank(0); // 切换到DSP bank
+    OV2640_I2C_Write(0x8C, 0x00); // 输出格式设置为RGB
     
     // 设置默认图像参数
     OV2640_SetBrightness(0x80);
     OV2640_SetContrast(0x80);
     OV2640_SetSaturation(0x80);
+    
+    // 再次设置输出格式为RGB565，确保不会被图像参数配置覆盖
+    OV2640_SelectBank(1); // 切换到Sensor bank
+    OV2640_I2C_Write(0x12, 0x04); // RGB565格式
+    OV2640_SelectBank(0); // 切换到DSP bank
+    OV2640_I2C_Write(0x8C, 0x00); // 输出格式设置为RGB
+    
+    // 启用颜色条测试模式，用于验证传感器是否正常输出数据
+    OV2640_SelectBank(1); // 切换到Sensor bank
+    uint8_t com7 = OV2640_I2C_Read(0x12);
+    com7 |= 0x02; // 启用颜色条
+    OV2640_I2C_Write(0x12, com7);
+    
+    // 确保同步信号配置正确
+    OV2640_I2C_Write(0x03, 0x1F); // 启用所有同步信号
+    
+    // 确保RGB565格式
+    OV2640_I2C_Write(0x12, 0x04); // RGB565格式
+    
+    // 读取并打印更多寄存器值，用于调试
+    OV2640_SelectBank(1); // 切换到Sensor bank
+    com7 = OV2640_I2C_Read(0x12);
+    uint8_t clkrc = OV2640_I2C_Read(0x11);
+    uint8_t com3 = OV2640_I2C_Read(0x03);
+    uint8_t com14 = OV2640_I2C_Read(0x3C);
+    OV2640_SelectBank(0); // 切换到DSP bank
+    uint8_t ctrl0 = OV2640_I2C_Read(0xC2);
+    uint8_t ctrl1 = OV2640_I2C_Read(0xC3);
+    uint8_t sizel = OV2640_I2C_Read(0x8C);
+    uint8_t clkdiv = OV2640_I2C_Read(0x41);
+    printf("OV2640 Registers: COM7=0x%02X, CLKRC=0x%02X, COM3=0x%02X, COM14=0x%02X, CTRL0=0x%02X, CTRL1=0x%02X, SIZE=0x%02X, CLKDIV=0x%02X\r\n", 
+           com7, clkrc, com3, com14, ctrl0, ctrl1, sizel, clkdiv);
     
     ov2640_status = OV2640_STATUS_READY;
 }
@@ -278,6 +329,9 @@ void OV2640_SetResolution(uint8_t resolution) {
     const uint8_t (*regs)[2] = NULL;
     
     switch (resolution) {
+        case OV2640_RES_40x40:
+            regs = ov2640_40x40_regs;
+            break;
         case OV2640_RES_160x120:
             regs = ov2640_qqvga_regs;
             break;
@@ -292,6 +346,7 @@ void OV2640_SetResolution(uint8_t resolution) {
     if (regs != NULL) {
         for (int i = 0; regs[i][0] != 0x00 || regs[i][1] != 0x00; i++) {
             OV2640_I2C_Write(regs[i][0], regs[i][1]);
+            HAL_Delay(1); // 增加延时以确保寄存器写入完成
         }
     }
 }
@@ -313,6 +368,9 @@ void OV2640_SetFormat(uint8_t format) {
         case OV2640_FORMAT_RGB565:
             OV2640_SelectBank(1); // 切换到Sensor bank
             OV2640_I2C_Write(0x12, 0x04);  // RGB565格式
+            // 确保输出格式正确
+            OV2640_SelectBank(0); // 切换到DSP bank
+            OV2640_I2C_Write(0x8C, 0x00); // 输出格式设置为RGB
             break;
         case OV2640_FORMAT_JPEG:
             OV2640_SelectBank(1); // 切换到Sensor bank
@@ -345,6 +403,10 @@ void OV2640_SetSaturation(uint8_t saturation) {
 // 获取图像尺寸
 static void OV2640_GetImageSize(uint16_t *width, uint16_t *height) {
     switch (ov2640_config.resolution) {
+        case OV2640_RES_40x40:
+            *width = 40;
+            *height = 40;
+            break;
         case OV2640_RES_160x120:
             *width = 160;
             *height = 120;
@@ -374,18 +436,62 @@ void OV2640_StartCapture(void) {
         uint16_t width, height;
         OV2640_GetImageSize(&width, &height);
         
+        printf("Starting capture: %dx%d\r\n", width, height);
+        
         // 计算缓冲区大小 (RGB565 = 2 bytes per pixel)
         uint32_t buffer_size = width * height * 2;
         
-        // 分配缓冲区
-        if (image_buffer == NULL) {
-            image_buffer = (uint8_t *)malloc(buffer_size);
+        printf("Buffer size: %d bytes\r\n", buffer_size);
+        printf("Using global buffer at: 0x%p\r\n", image_buffer);
+        
+        // 确保DCMI和DMA已正确初始化
+        if (hdcmi.Instance == NULL) {
+            printf("DCMI not initialized\r\n");
+            return;
         }
         
-        if (image_buffer != NULL) {
-            // 启动DCMI DMA传输
-            HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_CONTINUOUS, (uint32_t)image_buffer, buffer_size / 4);
+        // 启用DCMI的所有中断
+        __HAL_DCMI_ENABLE_IT(&hdcmi, DCMI_IT_FRAME);
+        __HAL_DCMI_ENABLE_IT(&hdcmi, DCMI_IT_VSYNC);
+        __HAL_DCMI_ENABLE_IT(&hdcmi, DCMI_IT_LINE);
+        __HAL_DCMI_ENABLE_IT(&hdcmi, DCMI_IT_ERR);
+        
+        // 启动DCMI DMA传输 - 使用连续模式
+        HAL_StatusTypeDef status = HAL_DCMI_Start_DMA(&hdcmi, DCMI_MODE_CONTINUOUS, (uint32_t)image_buffer, width * height);
+        printf("DCMI Start DMA status: %d\r\n", status);
+        
+        // 等待帧就绪标志
+        uint32_t timeout = 1000000; // 设置超时
+        uint32_t counter = 0;
+        while (frame_ready == 0 && counter < timeout) {
+            counter++;
         }
+        printf("Waited %d cycles for frame ready\r\n", counter);
+        printf("Frame ready flag: %d\r\n", frame_ready);
+        
+        // 打印缓冲区数据的前20个字节，以验证数据是否正确
+        printf("Buffer data: ");
+        for (int i = 0; i < 20; i++) {
+            printf("%02X ", image_buffer[i]);
+        }
+        printf("\r\n");
+        
+        // 检查缓冲区数据是否全为0
+        uint8_t all_zero = 1;
+        for (int i = 0; i < buffer_size; i++) {
+            if (image_buffer[i] != 0) {
+                all_zero = 0;
+                break;
+            }
+        }
+        printf("Buffer data all zero: %d\r\n", all_zero);
+        
+        // 停止DCMI
+        HAL_DCMI_Stop(&hdcmi);
+        
+        ov2640_status = OV2640_STATUS_READY;
+    } else {
+        printf("Camera not ready for capture, status: %d\r\n", ov2640_status);
     }
 }
 
@@ -419,10 +525,10 @@ uint8_t* OV2640_GetBuffer(void) {
     return image_buffer;
 }
 
-// DCMI帧中断回调
-void HAL_DCMI_FrameEventCallback(DCMI_HandleTypeDef *hdcmi) {
-    frame_ready = 1;
-    OV2640_StopCapture();
+// 帧就绪处理函数
+void OV2640_OnFrameReady(void) {
+	printf("OV2640_OnFrameReady called\r\n");
+	frame_ready = 1;
 }
 
 // 选择寄存器 bank

@@ -220,28 +220,17 @@ void SystemClock_Config(void)
 // 初始化摄像头显示界面
 static void Camera_InitUI(void) {
 	// 设置背景为黑色
-	lv_obj_set_style_bg_color(lv_scr_act(), lv_color_black(), 0);
+	lv_obj_set_style_bg_color(lv_scr_act(), lv_color_hex(0x000000), 0);
 	
-	// 获取摄像头配置
-	OV2640_ConfigTypeDef config;
-	OV2640_GetConfig(&config);
+	// 测试LCD是否工作正常，显示一个红色矩形
+	lv_obj_t *test_rect = lv_obj_create(lv_scr_act());
+	lv_obj_set_pos(test_rect, 50, 50);
+	lv_obj_set_size(test_rect, 100, 100);
+	lv_obj_set_style_bg_color(test_rect, lv_color_hex(0xFF0000), 0);
 	
-	// 计算图像尺寸
-	uint16_t width, height;
-	switch (config.resolution) {
-		case OV2640_RES_160x120:
-			width = 160;
-			height = 120;
-			break;
-		case OV2640_RES_320x240:
-			width = 320;
-			height = 240;
-			break;
-		default:
-			width = 320;
-			height = 240;
-			break;
-	}
+	// 固定使用40x40的显示框
+	uint16_t width = 40;
+	uint16_t height = 40;
 	
 	// 初始化图像描述符
 	camera_img_dsc.header.always_zero = 0;
@@ -253,16 +242,11 @@ static void Camera_InitUI(void) {
 	
 	// 创建图像对象
 	camera_img = lv_img_create(lv_scr_act());
-	lv_obj_set_pos(camera_img, 0, 0);
+	lv_obj_set_pos(camera_img, 10, 120); // 左上角10,120位置（避免与红色矩形重叠）
+	lv_obj_set_size(camera_img, width, height); // 设置为40x40大小
 	
-	// 如果图像比屏幕大，进行缩放
-	if (width > 240 || height > 320) {
-		// 计算缩放比例以适应屏幕
-		float scale_x = 240.0f / width;
-		float scale_y = 320.0f / height;
-		float scale = (scale_x < scale_y) ? scale_x : scale_y;
-		lv_img_set_zoom(camera_img, (uint16_t)(scale * 256)); // LVGL缩放系数是256为1倍
-	}
+	// 确保图像对象的样式正确
+	lv_obj_set_style_img_opa(camera_img, LV_OPA_100, 0);
 }
 
 // 更新摄像头帧
@@ -273,9 +257,13 @@ static void Camera_UpdateFrame(lv_timer_t *timer) {
 	
 	// 检查是否有新的帧准备好
 	if (OV2640_IsFrameReady()) {
+		printf("Frame ready, updating display\r\n");
+		
 		// 获取图像缓冲区
 		uint8_t *buffer = OV2640_GetBuffer();
 		if (buffer != NULL) {
+			printf("Buffer address: 0x%p\r\n", buffer);
+			
 			// 更新图像描述符的数据指针
 			camera_img_dsc.data = buffer;
 			
@@ -284,6 +272,10 @@ static void Camera_UpdateFrame(lv_timer_t *timer) {
 			
 			// 刷新显示
 			lv_obj_invalidate(camera_img);
+			
+			printf("Display updated\r\n");
+		} else {
+			printf("Buffer is NULL\r\n");
 		}
 		
 		// 清除帧就绪标志
@@ -321,6 +313,13 @@ static void Camera_Stop(void) {
 	
 	// 停止摄像头捕获
 	OV2640_StopCapture();
+}
+
+// DCMI帧中断回调函数
+void HAL_DCMI_FrameEventCallback(DCMI_HandleTypeDef *hdcmi) {
+	printf("DCMI Frame Event Callback triggered\r\n");
+	// 调用OV2640的帧就绪处理函数
+	OV2640_OnFrameReady();
 }
 
 /* USER CODE END 4 */

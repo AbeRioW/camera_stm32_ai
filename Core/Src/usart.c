@@ -19,10 +19,9 @@
 /* USER CODE END Header */
 /* Includes ------------------------------------------------------------------*/
 #include "usart.h"
-#include <stdio.h>
 
 /* USER CODE BEGIN 0 */
-
+#include "stdio.h"
 // 重定向printf到串口2
 int fputc(int ch, FILE *f) {
     HAL_UART_Transmit(&huart2, (uint8_t *)&ch, 1, 0xffff);

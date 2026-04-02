@@ -28,24 +28,17 @@ Project File Date:  04/02/2026
 *** Using Compiler 'V5.06 update 6 (build 750)', folder: 'C:\Keil_v5\ARM\ARMCC\Bin'
 Build target 'camera_stm32_ai'
 Note: source file '..\LVGL\GUI\src\extra\widgets\spinner\lv_spinner.c' - object file renamed from 'camera_stm32_ai\lv_spinner.o' to 'camera_stm32_ai\lv_spinner_1.o'.
-compiling main.c...
-../APP/lcd_ILI9341V.h(38): warning:  #1295-D: Deprecated declaration ILI9341_Unselect - give arg types
-  void ILI9341_Unselect();
-../APP/lcd_ILI9341V.h(48): warning:  #1295-D: Deprecated declaration ILI9341_Select - give arg types
-   void ILI9341_Select() ;
-../Core/Src/main.c(313): warning:  #177-D: function "Camera_Stop"  was declared but never referenced
-  static void Camera_Stop(void) {
-../Core/Src/main.c: 3 warnings, 0 errors
+compiling dcmi.c...
 compiling ov2640.c...
-..\APP\ov2640.c(544): warning:  #177-D: function "SCCB_SendAck"  was declared but never referenced
+..\APP\ov2640.c(650): warning:  #177-D: function "SCCB_SendAck"  was declared but never referenced
   static void SCCB_SendAck(uint8_t ack) {
-..\APP\ov2640.c(562): warning:  #177-D: function "SCCB_ReceiveAck"  was declared but never referenced
+..\APP\ov2640.c(668): warning:  #177-D: function "SCCB_ReceiveAck"  was declared but never referenced
   static uint8_t SCCB_ReceiveAck(void) {
 ..\APP\ov2640.c: 2 warnings, 0 errors
 linking...
-Program Size: Code=149180 RO-data=18716 RW-data=552 ZI-data=114688  
+Program Size: Code=149788 RO-data=18820 RW-data=540 ZI-data=105544  
 FromELF: creating hex file...
-"camera_stm32_ai\camera_stm32_ai.axf" - 0 Error(s), 5 Warning(s).
+"camera_stm32_ai\camera_stm32_ai.axf" - 0 Error(s), 2 Warning(s).
 
 <h2>Software Packages used:</h2>
 

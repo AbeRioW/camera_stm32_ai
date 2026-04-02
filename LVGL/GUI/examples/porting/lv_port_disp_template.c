@@ -75,7 +75,7 @@ void lv_port_disp_init(void)
 
     /* Example for 1) */
     static lv_disp_draw_buf_t draw_buf_dsc_1;
-    static lv_color_t buf_1[MY_DISP_HOR_RES * 40];                          /*A buffer for 10 rows*/
+    static lv_color_t buf_1[MY_DISP_HOR_RES * 40];                          /*A buffer for 40 rows*/
     lv_disp_draw_buf_init(&draw_buf_dsc_1, buf_1, NULL, MY_DISP_HOR_RES * 40);   /*Initialize the display buffer*/
 
 
@@ -150,24 +150,24 @@ static void disp_flush(lv_disp_drv_t * disp_drv, const lv_area_t * area, lv_colo
 //        for(x = area->x1; x <= area->x2; x++) {
 //            /*Put a pixel to the display. For example:*/
 //            /*put_px(x, y, *color_p)*/
-//					  //ÅäÖÃ×Ô¼ºµÄ´òµãº¯Êý***********
+//					  //ï¿½ï¿½ï¿½ï¿½ï¿½Ô¼ï¿½ï¿½Ä´ï¿½ãº¯ï¿½ï¿½***********
 //					ILI9341_DrawPixel(x,y, color_p->full);
 //        }
 //    }
 //		
-//		    // ×îºóÈ¡ÏûÑ¡ÔñLCD
+//		    // ï¿½ï¿½ï¿½È¡ï¿½ï¿½Ñ¡ï¿½ï¿½LCD
 //    HAL_GPIO_WritePin(GPIOB, LCD_CS_Pin, GPIO_PIN_SET);//ILI9341_Unselect();
 
-	   // Ñ¡ÔñLCD
+	   // Ñ¡ï¿½ï¿½LCD
     ILI9341_Select();
     
-    // ÉèÖÃµØÖ·´°¿Ú
+    // ï¿½ï¿½ï¿½Ãµï¿½Ö·ï¿½ï¿½ï¿½ï¿½
     ILI9341_SetAddressWindow(area->x1, area->y1, area->x2, area->y2);
     
-    // ÉèÖÃRSÎªÊý¾ÝÄ£Ê½
+    // ï¿½ï¿½ï¿½ï¿½RSÎªï¿½ï¿½ï¿½ï¿½Ä£Ê½
     HAL_GPIO_WritePin(GPIOB, LCD_RS_Pin, GPIO_PIN_SET);
     
-    // Ò»´ÎÐÔ·¢ËÍËùÓÐÑÕÉ«Êý¾Ý
+    // Ò»ï¿½ï¿½ï¿½Ô·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½
     for(y = area->y1; y <= area->y2; y++) {
         for(x = area->x1; x <= area->x2; x++) {
             uint8_t data[] = { color_p->full & 0xFF, color_p->full >> 8 };
