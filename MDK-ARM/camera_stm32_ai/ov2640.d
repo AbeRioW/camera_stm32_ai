@@ -8,7 +8,7 @@ camera_stm32_ai\ov2640.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_def.
 camera_stm32_ai\ov2640.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f4xx.h
 camera_stm32_ai\ov2640.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/stm32f407xx.h
 camera_stm32_ai\ov2640.o: ../Drivers/CMSIS/Include/core_cm4.h
-camera_stm32_ai\ov2640.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdint.h
+camera_stm32_ai\ov2640.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 camera_stm32_ai\ov2640.o: ../Drivers/CMSIS/Include/cmsis_version.h
 camera_stm32_ai\ov2640.o: ../Drivers/CMSIS/Include/cmsis_compiler.h
 camera_stm32_ai\ov2640.o: ../Drivers/CMSIS/Include/cmsis_armcc.h
@@ -16,7 +16,7 @@ camera_stm32_ai\ov2640.o: ../Drivers/CMSIS/Include/mpu_armv7.h
 camera_stm32_ai\ov2640.o: ../Drivers/CMSIS/Device/ST/STM32F4xx/Include/system_stm32f4xx.h
 camera_stm32_ai\ov2640.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal.h
 camera_stm32_ai\ov2640.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/Legacy/stm32_hal_legacy.h
-camera_stm32_ai\ov2640.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stddef.h
+camera_stm32_ai\ov2640.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 camera_stm32_ai\ov2640.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_rcc_ex.h
 camera_stm32_ai\ov2640.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio.h
 camera_stm32_ai\ov2640.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_gpio_ex.h
@@ -32,6 +32,7 @@ camera_stm32_ai\ov2640.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_flas
 camera_stm32_ai\ov2640.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 camera_stm32_ai\ov2640.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 camera_stm32_ai\ov2640.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
+camera_stm32_ai\ov2640.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 camera_stm32_ai\ov2640.o: ../LVGL/GUI/lvgl.h
 camera_stm32_ai\ov2640.o: ../LVGL/GUI/src/misc/lv_log.h
 camera_stm32_ai\ov2640.o: ../LVGL/GUI/src/misc/../lv_conf_internal.h
@@ -39,15 +40,15 @@ camera_stm32_ai\ov2640.o: ../LVGL/GUI/src/misc/../lv_conf_kconfig.h
 camera_stm32_ai\ov2640.o: ../LVGL/GUI/examples/porting/../../lv_conf.h
 camera_stm32_ai\ov2640.o: ../LVGL/GUI/src/misc/lv_types.h
 camera_stm32_ai\ov2640.o: ../LVGL/GUI/src/misc/lv_timer.h
-camera_stm32_ai\ov2640.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdbool.h
+camera_stm32_ai\ov2640.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 camera_stm32_ai\ov2640.o: ../LVGL/GUI/src/misc/lv_math.h
 camera_stm32_ai\ov2640.o: ../LVGL/GUI/src/misc/lv_mem.h
-camera_stm32_ai\ov2640.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\string.h
+camera_stm32_ai\ov2640.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 camera_stm32_ai\ov2640.o: ../LVGL/GUI/src/misc/lv_async.h
 camera_stm32_ai\ov2640.o: ../LVGL/GUI/src/misc/lv_anim_timeline.h
 camera_stm32_ai\ov2640.o: ../LVGL/GUI/src/misc/lv_anim.h
 camera_stm32_ai\ov2640.o: ../LVGL/GUI/src/misc/lv_printf.h
-camera_stm32_ai\ov2640.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdarg.h
+camera_stm32_ai\ov2640.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 camera_stm32_ai\ov2640.o: ../LVGL/GUI/src/hal/lv_hal.h
 camera_stm32_ai\ov2640.o: ../LVGL/GUI/src/hal/lv_hal_disp.h
 camera_stm32_ai\ov2640.o: ../LVGL/GUI/src/hal/lv_hal.h
@@ -153,3 +154,5 @@ camera_stm32_ai\ov2640.o: ../LVGL/GUI/src/extra/libs/sjpg/lv_sjpg.h
 camera_stm32_ai\ov2640.o: ../LVGL/GUI/src/extra/libs/freetype/lv_freetype.h
 camera_stm32_ai\ov2640.o: ../LVGL/GUI/src/extra/libs/rlottie/lv_rlottie.h
 camera_stm32_ai\ov2640.o: ../LVGL/GUI/src/extra/libs/ffmpeg/lv_ffmpeg.h
+camera_stm32_ai\ov2640.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdlib.h
+camera_stm32_ai\ov2640.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h

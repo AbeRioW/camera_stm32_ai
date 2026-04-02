@@ -3,21 +3,21 @@ camera_stm32_ai\lv_port_disp_template.o: ..\LVGL\GUI\examples\porting\lv_port_di
 camera_stm32_ai\lv_port_disp_template.o: ../LVGL/GUI/lvgl.h
 camera_stm32_ai\lv_port_disp_template.o: ../LVGL/GUI/src/misc/lv_log.h
 camera_stm32_ai\lv_port_disp_template.o: ../LVGL/GUI/src/misc/../lv_conf_internal.h
-camera_stm32_ai\lv_port_disp_template.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdint.h
+camera_stm32_ai\lv_port_disp_template.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 camera_stm32_ai\lv_port_disp_template.o: ../LVGL/GUI/src/misc/../lv_conf_kconfig.h
 camera_stm32_ai\lv_port_disp_template.o: ../LVGL/GUI/examples/porting/../../lv_conf.h
 camera_stm32_ai\lv_port_disp_template.o: ../LVGL/GUI/src/misc/lv_types.h
 camera_stm32_ai\lv_port_disp_template.o: ../LVGL/GUI/src/misc/lv_timer.h
-camera_stm32_ai\lv_port_disp_template.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdbool.h
+camera_stm32_ai\lv_port_disp_template.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 camera_stm32_ai\lv_port_disp_template.o: ../LVGL/GUI/src/misc/lv_math.h
 camera_stm32_ai\lv_port_disp_template.o: ../LVGL/GUI/src/misc/lv_mem.h
-camera_stm32_ai\lv_port_disp_template.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stddef.h
-camera_stm32_ai\lv_port_disp_template.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\string.h
+camera_stm32_ai\lv_port_disp_template.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+camera_stm32_ai\lv_port_disp_template.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 camera_stm32_ai\lv_port_disp_template.o: ../LVGL/GUI/src/misc/lv_async.h
 camera_stm32_ai\lv_port_disp_template.o: ../LVGL/GUI/src/misc/lv_anim_timeline.h
 camera_stm32_ai\lv_port_disp_template.o: ../LVGL/GUI/src/misc/lv_anim.h
 camera_stm32_ai\lv_port_disp_template.o: ../LVGL/GUI/src/misc/lv_printf.h
-camera_stm32_ai\lv_port_disp_template.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdarg.h
+camera_stm32_ai\lv_port_disp_template.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 camera_stm32_ai\lv_port_disp_template.o: ../LVGL/GUI/src/hal/lv_hal.h
 camera_stm32_ai\lv_port_disp_template.o: ../LVGL/GUI/src/hal/lv_hal_disp.h
 camera_stm32_ai\lv_port_disp_template.o: ../LVGL/GUI/src/hal/lv_hal.h
@@ -154,4 +154,5 @@ camera_stm32_ai\lv_port_disp_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm
 camera_stm32_ai\lv_port_disp_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr.h
 camera_stm32_ai\lv_port_disp_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_pwr_ex.h
 camera_stm32_ai\lv_port_disp_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_spi.h
+camera_stm32_ai\lv_port_disp_template.o: ../Drivers/STM32F4xx_HAL_Driver/Inc/stm32f4xx_hal_uart.h
 camera_stm32_ai\lv_port_disp_template.o: ../APP/lcd_ILI9341V.h

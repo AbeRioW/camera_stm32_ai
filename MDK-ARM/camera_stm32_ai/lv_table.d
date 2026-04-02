@@ -1,12 +1,12 @@
 camera_stm32_ai\lv_table.o: ..\LVGL\GUI\src\widgets\lv_table.c
 camera_stm32_ai\lv_table.o: ..\LVGL\GUI\src\widgets\lv_table.h
 camera_stm32_ai\lv_table.o: ..\LVGL\GUI\src\widgets\../lv_conf_internal.h
-camera_stm32_ai\lv_table.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdint.h
+camera_stm32_ai\lv_table.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 camera_stm32_ai\lv_table.o: ..\LVGL\GUI\src\widgets\../lv_conf_kconfig.h
 camera_stm32_ai\lv_table.o: ../LVGL/GUI/examples/porting/../../lv_conf.h
 camera_stm32_ai\lv_table.o: ..\LVGL\GUI\src\widgets\../core/lv_obj.h
-camera_stm32_ai\lv_table.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stddef.h
-camera_stm32_ai\lv_table.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdbool.h
+camera_stm32_ai\lv_table.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+camera_stm32_ai\lv_table.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 camera_stm32_ai\lv_table.o: ..\LVGL\GUI\src\widgets\../core/../misc/lv_style.h
 camera_stm32_ai\lv_table.o: ..\LVGL\GUI\src\widgets\../core/../misc/../font/lv_font.h
 camera_stm32_ai\lv_table.o: ..\LVGL\GUI\src\widgets\../core/../misc/../font/lv_symbol_def.h
@@ -16,11 +16,11 @@ camera_stm32_ai\lv_table.o: ..\LVGL\GUI\src\widgets\../core/../misc/lv_assert.h
 camera_stm32_ai\lv_table.o: ..\LVGL\GUI\src\widgets\../core/../misc/lv_log.h
 camera_stm32_ai\lv_table.o: ..\LVGL\GUI\src\widgets\../core/../misc/lv_types.h
 camera_stm32_ai\lv_table.o: ..\LVGL\GUI\src\widgets\../core/../misc/lv_mem.h
-camera_stm32_ai\lv_table.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\string.h
+camera_stm32_ai\lv_table.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 camera_stm32_ai\lv_table.o: ..\LVGL\GUI\src\widgets\../core/../misc/lv_math.h
 camera_stm32_ai\lv_table.o: ..\LVGL\GUI\src\widgets\../core/../misc/lv_anim.h
 camera_stm32_ai\lv_table.o: ..\LVGL\GUI\src\widgets\../core/../misc/lv_txt.h
-camera_stm32_ai\lv_table.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdarg.h
+camera_stm32_ai\lv_table.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 camera_stm32_ai\lv_table.o: ..\LVGL\GUI\src\widgets\../core/../misc/lv_printf.h
 camera_stm32_ai\lv_table.o: ..\LVGL\GUI\src\widgets\../core/../misc/lv_bidi.h
 camera_stm32_ai\lv_table.o: ..\LVGL\GUI\src\widgets\../core/../misc/lv_style_gen.h

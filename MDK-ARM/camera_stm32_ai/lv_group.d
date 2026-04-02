@@ -1,16 +1,16 @@
 camera_stm32_ai\lv_group.o: ..\LVGL\GUI\src\core\lv_group.c
-camera_stm32_ai\lv_group.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stddef.h
+camera_stm32_ai\lv_group.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 camera_stm32_ai\lv_group.o: ..\LVGL\GUI\src\core\lv_group.h
 camera_stm32_ai\lv_group.o: ..\LVGL\GUI\src\core\../lv_conf_internal.h
-camera_stm32_ai\lv_group.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdint.h
+camera_stm32_ai\lv_group.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 camera_stm32_ai\lv_group.o: ..\LVGL\GUI\src\core\../lv_conf_kconfig.h
 camera_stm32_ai\lv_group.o: ../LVGL/GUI/examples/porting/../../lv_conf.h
-camera_stm32_ai\lv_group.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdbool.h
+camera_stm32_ai\lv_group.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 camera_stm32_ai\lv_group.o: ..\LVGL\GUI\src\core\../misc/lv_ll.h
 camera_stm32_ai\lv_group.o: ..\LVGL\GUI\src\core\../misc/lv_types.h
 camera_stm32_ai\lv_group.o: ..\LVGL\GUI\src\core\../misc/lv_gc.h
 camera_stm32_ai\lv_group.o: ..\LVGL\GUI\src\core\../misc/lv_mem.h
-camera_stm32_ai\lv_group.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\string.h
+camera_stm32_ai\lv_group.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 camera_stm32_ai\lv_group.o: ..\LVGL\GUI\src\core\../misc/lv_timer.h
 camera_stm32_ai\lv_group.o: ..\LVGL\GUI\src\core\../misc/../draw/lv_img_cache.h
 camera_stm32_ai\lv_group.o: ..\LVGL\GUI\src\core\../misc/../draw/lv_img_decoder.h
@@ -29,7 +29,7 @@ camera_stm32_ai\lv_group.o: ..\LVGL\GUI\src\core\../core/../misc/../font/lv_font
 camera_stm32_ai\lv_group.o: ..\LVGL\GUI\src\core\../core/../misc/../font/lv_symbol_def.h
 camera_stm32_ai\lv_group.o: ..\LVGL\GUI\src\core\../core/../misc/lv_anim.h
 camera_stm32_ai\lv_group.o: ..\LVGL\GUI\src\core\../core/../misc/lv_txt.h
-camera_stm32_ai\lv_group.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdarg.h
+camera_stm32_ai\lv_group.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 camera_stm32_ai\lv_group.o: ..\LVGL\GUI\src\core\../core/../misc/lv_printf.h
 camera_stm32_ai\lv_group.o: ..\LVGL\GUI\src\core\../core/../misc/lv_bidi.h
 camera_stm32_ai\lv_group.o: ..\LVGL\GUI\src\core\../core/../misc/lv_style_gen.h

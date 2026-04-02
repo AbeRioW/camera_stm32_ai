@@ -190,3 +190,4 @@ void HAL_DCMI_MspDeInit(DCMI_HandleTypeDef* dcmiHandle)
 /* USER CODE BEGIN 1 */
 
 /* USER CODE END 1 */
+

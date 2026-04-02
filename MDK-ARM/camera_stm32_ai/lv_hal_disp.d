@@ -1,9 +1,9 @@
 camera_stm32_ai\lv_hal_disp.o: ..\LVGL\GUI\src\hal\lv_hal_disp.c
-camera_stm32_ai\lv_hal_disp.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdint.h
-camera_stm32_ai\lv_hal_disp.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stddef.h
+camera_stm32_ai\lv_hal_disp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+camera_stm32_ai\lv_hal_disp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 camera_stm32_ai\lv_hal_disp.o: ..\LVGL\GUI\src\hal\lv_hal.h
 camera_stm32_ai\lv_hal_disp.o: ..\LVGL\GUI\src\hal\lv_hal_disp.h
-camera_stm32_ai\lv_hal_disp.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdbool.h
+camera_stm32_ai\lv_hal_disp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 camera_stm32_ai\lv_hal_disp.o: ..\LVGL\GUI\src\hal\lv_hal.h
 camera_stm32_ai\lv_hal_disp.o: ..\LVGL\GUI\src\hal\../draw/lv_draw.h
 camera_stm32_ai\lv_hal_disp.o: ..\LVGL\GUI\src\hal\../draw/../lv_conf_internal.h
@@ -18,11 +18,11 @@ camera_stm32_ai\lv_hal_disp.o: ..\LVGL\GUI\src\hal\../draw/../misc/lv_assert.h
 camera_stm32_ai\lv_hal_disp.o: ..\LVGL\GUI\src\hal\../draw/../misc/lv_log.h
 camera_stm32_ai\lv_hal_disp.o: ..\LVGL\GUI\src\hal\../draw/../misc/lv_types.h
 camera_stm32_ai\lv_hal_disp.o: ..\LVGL\GUI\src\hal\../draw/../misc/lv_mem.h
-camera_stm32_ai\lv_hal_disp.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\string.h
+camera_stm32_ai\lv_hal_disp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 camera_stm32_ai\lv_hal_disp.o: ..\LVGL\GUI\src\hal\../draw/../misc/lv_math.h
 camera_stm32_ai\lv_hal_disp.o: ..\LVGL\GUI\src\hal\../draw/../misc/lv_anim.h
 camera_stm32_ai\lv_hal_disp.o: ..\LVGL\GUI\src\hal\../draw/../misc/lv_txt.h
-camera_stm32_ai\lv_hal_disp.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdarg.h
+camera_stm32_ai\lv_hal_disp.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 camera_stm32_ai\lv_hal_disp.o: ..\LVGL\GUI\src\hal\../draw/../misc/lv_printf.h
 camera_stm32_ai\lv_hal_disp.o: ..\LVGL\GUI\src\hal\../draw/../misc/lv_bidi.h
 camera_stm32_ai\lv_hal_disp.o: ..\LVGL\GUI\src\hal\../draw/../misc/lv_style_gen.h

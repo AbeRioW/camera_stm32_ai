@@ -1,13 +1,13 @@
 camera_stm32_ai\lv_txt_ap.o: ..\LVGL\GUI\src\misc\lv_txt_ap.c
-camera_stm32_ai\lv_txt_ap.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stddef.h
+camera_stm32_ai\lv_txt_ap.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
 camera_stm32_ai\lv_txt_ap.o: ..\LVGL\GUI\src\misc\lv_bidi.h
 camera_stm32_ai\lv_txt_ap.o: ..\LVGL\GUI\src\misc\../lv_conf_internal.h
-camera_stm32_ai\lv_txt_ap.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdint.h
+camera_stm32_ai\lv_txt_ap.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 camera_stm32_ai\lv_txt_ap.o: ..\LVGL\GUI\src\misc\../lv_conf_kconfig.h
 camera_stm32_ai\lv_txt_ap.o: ../LVGL/GUI/examples/porting/../../lv_conf.h
-camera_stm32_ai\lv_txt_ap.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdbool.h
+camera_stm32_ai\lv_txt_ap.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 camera_stm32_ai\lv_txt_ap.o: ..\LVGL\GUI\src\misc\lv_txt.h
-camera_stm32_ai\lv_txt_ap.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdarg.h
+camera_stm32_ai\lv_txt_ap.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 camera_stm32_ai\lv_txt_ap.o: ..\LVGL\GUI\src\misc\lv_area.h
 camera_stm32_ai\lv_txt_ap.o: ..\LVGL\GUI\src\misc\../font/lv_font.h
 camera_stm32_ai\lv_txt_ap.o: ..\LVGL\GUI\src\misc\../font/lv_symbol_def.h
@@ -20,7 +20,7 @@ camera_stm32_ai\lv_txt_ap.o: ..\LVGL\GUI\src\misc\../draw/../misc/lv_color.h
 camera_stm32_ai\lv_txt_ap.o: ..\LVGL\GUI\src\misc\../draw/../misc/lv_assert.h
 camera_stm32_ai\lv_txt_ap.o: ..\LVGL\GUI\src\misc\../draw/../misc/lv_log.h
 camera_stm32_ai\lv_txt_ap.o: ..\LVGL\GUI\src\misc\../draw/../misc/lv_mem.h
-camera_stm32_ai\lv_txt_ap.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\string.h
+camera_stm32_ai\lv_txt_ap.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 camera_stm32_ai\lv_txt_ap.o: ..\LVGL\GUI\src\misc\../draw/../misc/lv_math.h
 camera_stm32_ai\lv_txt_ap.o: ..\LVGL\GUI\src\misc\../draw/../misc/lv_anim.h
 camera_stm32_ai\lv_txt_ap.o: ..\LVGL\GUI\src\misc\../draw/../misc/lv_style_gen.h

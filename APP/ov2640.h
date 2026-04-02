@@ -4,7 +4,7 @@
 #include "main.h"
 
 // OV2640 I2C地址
-#define OV2640_I2C_ADDR 0x30
+#define OV2640_I2C_ADDR 0x30  // OV2640的I2C地址 (7位地址)
 
 // OV2640寄存器地址
 #define OV2640_REG_BANK_SELECT 0xFF
@@ -50,6 +50,7 @@ typedef struct {
 // 函数声明
 void OV2640_Init(void);
 OV2640_StatusTypeDef OV2640_GetStatus(void);
+void OV2640_GetConfig(OV2640_ConfigTypeDef *config);
 void OV2640_SetResolution(uint8_t resolution);
 void OV2640_SetFormat(uint8_t format);
 void OV2640_SetBrightness(uint8_t brightness);
@@ -58,6 +59,10 @@ void OV2640_SetSaturation(uint8_t saturation);
 void OV2640_StartCapture(void);
 void OV2640_StopCapture(void);
 void OV2640_ReadFrame(uint8_t *buffer, uint32_t size);
+uint8_t OV2640_IsFrameReady(void);
+void OV2640_ClearFrameReady(void);
+uint8_t* OV2640_GetBuffer(void);
 void OV2640_DisplayImage(void);
+void OV2640_GetSensorID(uint8_t *id_h, uint8_t *id_l);
 
 #endif /* __OV2640_H__ */

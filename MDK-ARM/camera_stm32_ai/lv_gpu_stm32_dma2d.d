@@ -2,18 +2,18 @@ camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\lv_gpu_st
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\lv_gpu_stm32_dma2d.h
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../misc/lv_color.h
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../misc/../lv_conf_internal.h
-camera_stm32_ai\lv_gpu_stm32_dma2d.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdint.h
+camera_stm32_ai\lv_gpu_stm32_dma2d.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../misc/../lv_conf_kconfig.h
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ../LVGL/GUI/examples/porting/../../lv_conf.h
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../misc/lv_assert.h
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../misc/lv_log.h
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../misc/lv_types.h
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../misc/lv_mem.h
-camera_stm32_ai\lv_gpu_stm32_dma2d.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stddef.h
-camera_stm32_ai\lv_gpu_stm32_dma2d.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\string.h
+camera_stm32_ai\lv_gpu_stm32_dma2d.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stddef.h
+camera_stm32_ai\lv_gpu_stm32_dma2d.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\string.h
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../misc/lv_math.h
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../hal/lv_hal_disp.h
-camera_stm32_ai\lv_gpu_stm32_dma2d.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdbool.h
+camera_stm32_ai\lv_gpu_stm32_dma2d.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdbool.h
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../hal/lv_hal.h
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../hal/lv_hal_disp.h
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../hal/lv_hal_indev.h
@@ -26,7 +26,7 @@ camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../hal
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../hal/../draw/../misc/../font/lv_symbol_def.h
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../hal/../draw/../misc/lv_anim.h
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../hal/../draw/../misc/lv_txt.h
-camera_stm32_ai\lv_gpu_stm32_dma2d.o: D:\Program Files\KEIL5\ARM\ARMCC\Bin\..\include\stdarg.h
+camera_stm32_ai\lv_gpu_stm32_dma2d.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdarg.h
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../hal/../draw/../misc/lv_printf.h
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../hal/../draw/../misc/lv_bidi.h
 camera_stm32_ai\lv_gpu_stm32_dma2d.o: ..\LVGL\GUI\src\draw\stm32_dma2d\../../hal/../draw/../misc/lv_style_gen.h

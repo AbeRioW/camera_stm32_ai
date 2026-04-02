@@ -5,6 +5,7 @@
 "camera_stm32_ai\dcmi.o"
 "camera_stm32_ai\dma.o"
 "camera_stm32_ai\spi.o"
+"camera_stm32_ai\usart.o"
 "camera_stm32_ai\stm32f4xx_it.o"
 "camera_stm32_ai\stm32f4xx_hal_msp.o"
 "camera_stm32_ai\stm32f4xx_hal_dcmi.o"
@@ -23,6 +24,7 @@
 "camera_stm32_ai\stm32f4xx_hal.o"
 "camera_stm32_ai\stm32f4xx_hal_exti.o"
 "camera_stm32_ai\stm32f4xx_hal_spi.o"
+"camera_stm32_ai\stm32f4xx_hal_uart.o"
 "camera_stm32_ai\system_stm32f4xx.o"
 "camera_stm32_ai\lcd_ili9341v.o"
 "camera_stm32_ai\ft6336_touch.o"
@@ -104,7 +106,7 @@
 "camera_stm32_ai\lv_msgbox.o"
 "camera_stm32_ai\lv_span.o"
 "camera_stm32_ai\lv_spinbox.o"
-"camera_stm32_ai\lv_spinner.o"
+"camera_stm32_ai\lv_spinner_1.o"
 "camera_stm32_ai\lv_tabview.o"
 "camera_stm32_ai\lv_tileview.o"
 "camera_stm32_ai\lv_win.o"
@@ -195,7 +197,7 @@
 "camera_stm32_ai\lv_table.o"
 "camera_stm32_ai\lv_textarea.o"
 "camera_stm32_ai\lv_demo_stress.o"
---strict --scatter "camera_stm32_ai\camera_stm32_ai.sct"
+--library_type=microlib --strict --scatter "camera_stm32_ai\camera_stm32_ai.sct"
 --summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
 --info sizes --info totals --info unused --info veneers
 --list "camera_stm32_ai.map" -o camera_stm32_ai\camera_stm32_ai.axf
